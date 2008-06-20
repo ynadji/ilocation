@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iLocation' target in the 'iLocation' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
