@@ -13,6 +13,7 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B81498D50E0B1CDA008EED58 /* ilocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B81498D40E0B1CDA008EED58 /* ilocation.m */; };
 		B814999B0E0B25C8008EED58 /* network.png in Resources */ = {isa = PBXBuildFile; fileRef = B81499490E0B20B8008EED58 /* network.png */; };
+		B8462E9E0E0DC42200A502D7 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B8462E9D0E0DC42200A502D7 /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		8D1107320486CEB800E47090 /* iLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81498D30E0B1CDA008EED58 /* ilocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ilocation.h; sourceTree = "<group>"; };
 		B81498D40E0B1CDA008EED58 /* ilocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ilocation.m; sourceTree = "<group>"; };
-		B81499490E0B20B8008EED58 /* network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = network.png; path = ../iLocation/network.png; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81499490E0B20B8008EED58 /* network.png */ = {isa = PBXFileReference; explicitFileType = image.png; path = network.png; sourceTree = "<group>"; };
+		B8462E9D0E0DC42200A502D7 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B81499490E0B20B8008EED58 /* network.png */,
+				B8462E9D0E0DC42200A502D7 /* icon.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -163,6 +166,7 @@
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				B814999B0E0B25C8008EED58 /* network.png in Resources */,
+				B8462E9E0E0DC42200A502D7 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +243,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
 		};
@@ -249,6 +254,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
 		};

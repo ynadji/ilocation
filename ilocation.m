@@ -18,7 +18,7 @@
 	size.width = NSSquareStatusItemLength;
 	size.height = NSSquareStatusItemLength;
 	
-    statusImage = [[NSImage alloc] initWithContentsOfFile:@"../iLocation/network.png"];
+	statusImage = [[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"network" ofType:@"png"]];
 	[statusImage setSize:size];
 	
 	[self populateMenu];
@@ -101,6 +101,8 @@
 		i;
 	
 	NSRange range;
+	range.location = 0;
+	range.length = len;
 	
 	for (i = 0; i < len; i++) {
 		if ([location characterAtIndex:i] == '*')
