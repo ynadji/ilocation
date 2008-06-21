@@ -18,4 +18,10 @@
 	NSImage *statusAltImage;
 }
 
+- (void) populateMenu;
+- (IBAction) refreshMenu:(id)sender;
+- (IBAction) changeLocation:(id)sender;
+- (NSString *) fixLocation:(NSString *)location;
+- (void) dealloc;
+
 @end
